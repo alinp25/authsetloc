@@ -15,8 +15,8 @@ const userSchema = mongoose.Schema({
   twitter: {
     id: String,
     token: String,
-    name: String,
-    email: String
+    displayName: String,
+    username: String
   },
   google: {
     id: String,

@@ -45,10 +45,40 @@
                 <h3 class="text-primary"><span class="fa fa-facebook"></span>Facebook</h3>
 
                     <p>
-                        <strong>id</strong>: <%= user.facebook_id %><br>
+                        <strong>id</strong>: <%= user.facebook.id %><br>
                         <strong>token</strong>: <%= user.facebook.token %><br>
                         <strong>email</strong>: <%= user.facebook.email %><br>
-                        <strong>name</strong>: <%= user.local.name %>
+                        <strong>name</strong>: <%= user.facebook.name %>
+                    </p>
+
+            </div>
+        </div>
+
+        <!-- Twitter INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-primary"><span class="fa fa-twitter"></span>Twitter</h3>
+
+                    <p>
+                        <strong>id</strong>: <%= user.twitter.id %><br>
+                        <strong>token</strong>: <%= user.twitter.token %><br>
+                        <strong>displayName</strong>: <%= user.twitter.displayName %><br>
+                        <strong>username</strong>: <%= user.twitter.username %>
+                    </p>
+
+            </div>
+        </div>
+
+        <!-- Google INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-primary"><span class="fa fa-twitter"></span>Google</h3>
+
+                    <p>
+                        <strong>id</strong>: <%= user.google.id %><br>
+                        <strong>token</strong>: <%= user.google.token %><br>
+                        <strong>name</strong>: <%= user.google.name %><br>
+                        <strong>email</strong>: <%= user.google.email %>
                     </p>
 
             </div>

@@ -8,13 +8,13 @@ module.exports = {
     'profileFields': ['id', 'email', 'name']
   },
   'twitterAuth': {
-    'consumerKey': '',
-    'consumerSecret': '',
+    'consumerKey': 'mWwQ4OiOwTmPFckjUiYHwtvgn',
+    'consumerSecret': 'HqSqRnnOgVb9bx7wZT0Hra0iNdQUTcth3AvP6zXNIKra1ynNYc',
     'callbackURL': 'http://localhost:8080/auth/twitter/callback'
   },
   'googleAuth': {
-    'clientID': '',
-    'clientSecret': '',
+    'clientID': '374720140953-c0h50f1lqhuqaptq2ta3d5pg86vkd7lp.apps.googleusercontent.com',
+    'clientSecret': 'OfOegfex6Q5CL0FBfGQRaDm1',
     'callbackURL': 'http://localhost:8080/auth/google/callback'
   }
 

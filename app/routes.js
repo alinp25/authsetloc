@@ -39,6 +39,22 @@ module.exports = (app, passport) => {
       failureRedirect: '/'
     }));
 
+  app.get('/auth/twitter', passport.authenticate('twitter'));
+
+  app.get('/auth/twitter/callback', passport.authenticate('twitter', {
+    successRedirect: '/profile',
+    failureRedirect: '/'
+  }));
+
+  app.get('/auth/google', passport.authenticate('google', {
+    scope: ['profile', 'email']
+  }));
+
+  app.get('/auth/google/callback', passport.authenticate('google', {
+    successRedirect: '/profile',
+    failureRedirect: '/'
+  }));
+
   app.get('/logout', (req, res) => {
     req.logout();
     res.redirect('/');
